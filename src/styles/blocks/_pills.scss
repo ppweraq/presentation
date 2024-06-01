@@ -1,0 +1,9 @@
+.pills {
+    // position: relative;
+
+    .pills-img_pill-jars {
+        position: absolute;
+        right: 0;
+        z-index: -1;
+    }
+}
