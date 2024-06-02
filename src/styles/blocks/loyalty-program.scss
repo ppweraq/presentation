@@ -15,7 +15,7 @@
   .loyalty-program_content {
     margin-top: 20px;
     margin-bottom: 60px;
-    background: url('../images/bg.png')  no-repeat 50% 50%;
+    background: url("../images/bg.png") no-repeat 50% 50%;
 
     border-radius: 40px;
 
@@ -50,8 +50,74 @@
       }
     }
     .loyalty-program_column__btn {
-        width: 330px;
-        padding: 12px 20px;
+      max-width: 330px;
+      padding: 12px 20px;
+    }
+  }
+}
+@media (max-width: 815px) {
+  .loyalty-program {
+    .loyalty-program_content {
+      background: url("../images/bg-mobile.png") no-repeat 50% 50%;
+      margin: 20px 15px;
+      padding: 20px 10px;
+      border-radius: 20px;
+      background-size: cover;
+
+      flex-direction: column-reverse;
+      text-align: center;
+      .loyalty-program_column {
+        text-align: center;
+      }
+      .loyalty-program_column__list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+      .list-item {
+        display: block;
+        img {
+          width: 54px;
+          height: 48px;
+        }
+        p {
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 16.8px;
+        }
+      }
+      .loyalty-program_column__subtitle {
+        p {
+          text-align: left;
+        }
+      }
+      .loyalty-program_img_qr {
+        margin: 0 auto;
+      }
+      .loyalty-program_column__button {
+       margin: 0 auto;
+       margin-bottom: 30px;
+      }
+    }
+  }
+}
+@media (max-width: 530px) {
+  .loyalty-program {
+
+    .loyalty-program_content {
+      text-align-last: left;
+    }
+    .loyalty-program_title h3 {
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 28.8px;
+      text-align: left;
+  
+      max-width: 870px;
+      margin: 0 10px;
+  
+      span {
+        color: rgba(235, 150, 6, 1);
+      }
     }
   }
 }

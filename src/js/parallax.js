@@ -11,13 +11,28 @@ export function initParallax() {
       });
   }
 
-  const swiperContainer = document.querySelector('.slider');
-  if (swiperContainer) {
-    const swiper = new Swiper(swiperContainer, {
-      slidesPerView: 'auto', // Для отображения нескольких слайдов подряд
-      spaceBetween: 40,
+  var swiper = new Swiper('.swiper', {
+    spaceBetween: 40, 
+    // loop: true,
+    slidesPerView: 1.3,
+    breakpoints: {
+      815: {
+        slidesPerView: 2.6
+      }
     }
-    );
-  } else {
-    console.error('Swiper container not found.');
+  });
+
+  function mobileNav() {
+    // Mobile nav button
+    const navBtn = document.querySelector('.mobile-nav-btn');
+    const nav = document.querySelector('.mobile-nav');
+    const menuIcon = document.querySelector('.nav-icon');
+  
+    navBtn.onclick = function () {
+      nav.classList.toggle('mobile-nav--open');
+      menuIcon.classList.toggle('nav-icon--active');
+      document.body.classList.toggle('no-scroll');
+    };
   }
+  
+  export default mobileNav;

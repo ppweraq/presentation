@@ -16,8 +16,9 @@
           <div class="header_nav_logo">
             <img src="./images/logo.svg" alt="logo" />
           </div>
+
           <ul class="header_nav_list">
-            <li><a class="header_nav_list" href="#!">Главная</a></li>
+            <li><a class="header_nav_link grey-link" href="#!">Главная</a></li>
             <li><a class="header_nav_link" href="#!">Для специалистов</a></li>
             <li><a class="header_nav_link" href="#!">Инструкция</a></li>
           </ul>
@@ -27,11 +28,11 @@
             <img src="./images/cart.svg" alt="cart" />
           </a>
 
-          <!-- <div class="nav__icon">
-                      <button class="mobile-nav-btn">
-                        <img class="nav-icon" src="./img/icons/mobile_nav.svg" alt="" />
-                      </button>
-                    </div> -->
+          <div class="nav__icon">
+            <button class="mobile-nav-btn">
+              <img class="nav-icon" src="./images/mobile_nav.png" alt="" />
+            </button>
+          </div>
         </nav>
       </div>
     </header>
@@ -39,6 +40,9 @@
     <section class="pills">
       <div class="pills-img_pill-jars">
         <img src="./images/pill-jars.png" alt="pills" />
+      </div>
+      <div class="pills-img_pill-jars-mobile">
+        <img src="./images/pills-jars-mobile.png" alt="pills" />
       </div>
       <div class="pills-img_drags">
         <img
@@ -61,23 +65,35 @@
           alt=""
           class="pills-img pills-bottomright"
         />
+        <img
+          src="./images/pill-mobile1.png"
+          alt=""
+          class="pills-img pill-mobile1"
+        />
+        <img
+          src="./images/pill-mobile2.png"
+          alt=""
+          class="pills-img pill-mobile2"
+        />
       </div>
       <div class="container">
         <div class="pills_title">
           <h2>
-            Гепарамакс®<br />
+            Гепарамакс<sup>®</sup><br />
             Форте
           </h2>
           <div class="pills_subtitle">
             <p>
               комбинированный комплекс<br />
-              для поддержки эффективной работы <br />печени
+              для поддержки эффективной работы печени
             </p>
           </div>
-          <a href="#!" class="pills_btn">
-            Купить
-            <img src="./images/cart.svg" alt="cart" />
-          </a>
+          <div class="pills-button">
+            <a href="#!" class="pills_btn">
+              Купить
+              <img src="./images/cart.svg" alt="cart" />
+            </a>
+          </div>
         </div>
       </div>
     </section>
@@ -120,11 +136,12 @@
               в программу лояльности или перейдите по кнопке
             </p>
           </div>
-
-          <a href="#!" class="loyalty-program_column__btn"
-            >Подписаться на канал
-            <img src="./images/program-btn-logo.png" alt="logo" />
-          </a>
+          <div class="loyalty-program_column__button">
+            <a href="#!" class="loyalty-program_column__btn"
+              >Подписаться на канал
+              <img src="./images/program-btn-logo.png" alt="logo" />
+            </a>
+          </div>
         </div>
         <!-- </div> -->
       </div>
@@ -133,7 +150,7 @@
     <section class="slider-section">
       <div class="swiper slider">
         <div class="swiper-wrapper slider-items">
-          <div class="swiper-slide slider-item">
+          <div class="swiper-slide slider-item one">
             <img src="./images/slide1.png" alt="" />
           </div>
           <div class="swiper-slide slider-item">
@@ -152,13 +169,16 @@
     <section class="structure container">
       <div class="structure-list">
         <div class="structure-list__title">
-          <h3>Состав ГЕПАРАМАКС® ФОРТЕ</h3>
+          <h3>
+            Состав<br />
+            <span>Гепарамакс<sup>®</sup> Форте</span>
+          </h3>
         </div>
         <div class="structure-list__item">
           <img src="./images/structure1.png" alt="logo" />
           <p>
             400 мг адеметионина <br />
-            <span>в 1 таблетке 3</span>
+            <span>в 1 таблетке<sup>3</sup></span>
           </p>
         </div>
         <div class="structure-list__item">
@@ -167,7 +187,7 @@
             Витамины B9 и B12
 
             <br />
-            <span>в составе усиливают действие адеметионина5</span>
+            <span>в составе усиливают действие адеметионина<sup>5</sup></span>
           </p>
         </div>
         <div class="structure-list__item">
@@ -176,15 +196,39 @@
             Более 30%
 
             <br />
-            <span>экономия средств на курс приема2</span>
+            <span>экономия средств на курс приема<sup>3</sup></span>
           </p>
         </div>
       </div>
-      
+
       <div class="structure-img">
-        <img src="./images/structure.png" alt="pill">
+        <img src="./images/structure.png" alt="pill" />
+      </div>
+      <div class="structure-img-mobile">
+        <img src="./images/structure-mobile.png" alt="pill" />
       </div>
     </section>
+
+    <div class="mobile-nav">
+      <ul class="mobile-links">
+        <li class="mobile-links__parent">
+          <a href="#!" class="mobile-links__parent-title grey-link">главная</a>
+        </li>
+
+        <li class="mobile-links__parent">
+          <a href="#!" class="mobile-links__parent-title">для специалистов</a>
+        </li>
+
+        <li class="mobile-links__parent">
+          <a href="#!" class="mobile-links__parent-title">Инструкция</a>
+        </li>
+      </ul>
+
+      <a href="#!" class="header_nav_btn_mobile">
+        Купить
+        <img src="./images/cart.svg" alt="cart" />
+      </a>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </body>

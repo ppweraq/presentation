@@ -37,15 +37,17 @@ header {
   font-size: 12px;
   text-transform: uppercase;
   line-height: 22.5px;
-  .header_nav_list {
-    color: rgba(189, 189, 189, 1);
-  }
   .header_nav_link {
     color: #373737;
   }
+  .grey-link {
+    color: rgba(189, 189, 189, 1);
+  }
 }
 
-.header_nav_btn, .pills_btn, .loyalty-program_column__btn {
+.header_nav_btn,
+.pills_btn,
+.loyalty-program_column__btn {
   background: linear-gradient(
     356deg,
     #9c9d9d -145.77%,
@@ -68,6 +70,102 @@ header {
   line-height: 16.32px;
   &:hover {
     background: rgba(55, 55, 55, 1);
-    
+  }
+}
+.nav__icon {
+  display: none;
+}
+
+.mobile-nav-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mobile-nav {
+  display: none;
+}
+
+@media (max-width: 815px) {
+  header {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+  }
+  .header_container {
+    padding: 10px 15px;
+    border-radius: 0;
+    background: rgb(255, 255, 255);
+  }
+  .header_nav_logo {
+    width: 145px;
+  }
+  .nav__icon {
+    display: block;
+  }
+  .header_nav_link,
+  .header_nav_btn {
+    display: none;
+  }
+}
+
+.mobile-nav {
+  position: absolute;
+  top: -100%;
+  right: 0;
+
+  width: 318px;
+  z-index: 9;
+
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 30px;
+  padding: 54px 30px;
+
+  background: rgb(255, 255, 255);
+  border-radius: 0px 0px 0px 25px;
+  transition: all 0.3s ease-in;
+}
+
+.mobile-nav--open {
+  top: 46px;
+}
+.mobile-links {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  .mobile-links__parent-title {
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22.5px;
+    text-align: left;
+    color: rgba(55, 55, 55, 1);
+  }
+  .grey-link {
+    color: rgba(189, 189, 189, 1);
+  }
+}
+.header_nav_btn_mobile {
+  background: linear-gradient(5.32deg, #9C9D9D -181.3%, #7B7B7B -28.46%, #B2B2B2 48.07%, #878786 95.23%, #CACACA 95.23%);
+
+  padding: 18.47px 76.5px;
+  color: rgba(255, 255, 255, 1);
+  border-radius: 55px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8.93px;
+
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 20.4px;
+ 
+  &:hover {
+    background: rgba(55, 55, 55, 1);
   }
 }
