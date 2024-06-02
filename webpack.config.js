@@ -47,7 +47,14 @@ module.exports = ({develop}) => ({
               use: [
                 MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'
               ]
-          }
+          },
+          {
+            test: /\.js$/,
+            exclude: /node_modules/,
+            use: {
+                loader: 'babel-loader', // Пример использования Babel для поддержки современного JavaScript
+            },
+          },
       ]
   },
   ...devServer(develop),

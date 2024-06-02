@@ -1,9 +1,58 @@
 .pills {
-    // position: relative;
+  // position: relative;
+  height: 694px;
 
-    .pills-img_pill-jars {
+  .pills-img_pill-jars {
+    position: absolute;
+    right: 0;
+    z-index: -1;
+  }
+  .pills-img_drags {
+    position: relative;
+    width: 100%;
+    
+    .pills-img{
         position: absolute;
-        right: 0;
-        z-index: -1;
+        // display: block;
     }
+    .pills-topleft {
+        z-index: -1;
+      right: 471px;
+    }
+    .pills-topright {
+      right: 0;
+      top: 95px;
+    }
+    .pills-bottomleft {
+        top: 484px;
+        right: 610px;
+    }
+    .pills-bottomright {
+        top: 497.96px;
+        right: 78px;
+    }
+  }
+}
+.pills_title {
+  position: absolute;
+  top: 226px;
+  h2 {
+    font-size: 72px;
+    font-weight: 800;
+    line-height: 72px;
+    text-align: left;
+  }
+  .pills_subtitle {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28.8px;
+    text-align: left;
+
+    margin-top: 16px;
+    max-width: 533px;
+  }
+  .pills_btn {
+    max-width: 190px;
+    margin-top: 32px;
+  }
 }

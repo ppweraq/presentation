@@ -4,6 +4,7 @@ header {
   justify-content: center;
   top: 10px;
   width: 100%;
+  z-index: 100;
 }
 
 .header_container {
@@ -44,7 +45,7 @@ header {
   }
 }
 
-.header_nav_btn {
+.header_nav_btn, .pills_btn, .loyalty-program_column__btn {
   background: linear-gradient(
     356deg,
     #9c9d9d -145.77%,
@@ -65,4 +66,8 @@ header {
   font-weight: 700;
   font-size: 16px;
   line-height: 16.32px;
+  &:hover {
+    background: rgba(55, 55, 55, 1);
+    
+  }
 }
